@@ -9,7 +9,7 @@ for file in files:
     with open(file) as f:
         data = json.load(f)
         for item in data:
-            if "句" in item['title']:
+            if "句" in item['title'] or ")" in item['title'] or " " in item['title'] or item["title"].startswith("\n") or item["title"] == "":
                 continue
             titles.append(item['title'])
 
