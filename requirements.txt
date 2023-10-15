@@ -1,2 +1,2 @@
-torch
-jupyter
+torch==1.13.1
+jupyterlab
